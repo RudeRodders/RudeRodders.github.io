@@ -1,55 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Rude Rodder - Home</title>
-<link rel="stylesheet" href="files/template.css" type="text/css" /> 
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25395106-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</head><body>
-<div class="float50">
-	<img class="imgfloat" width="100%" src="images/RRProd.png" alt="RRProd" />
-	<div class="Header">Intro Stuff --></div>
-	<div class="centerAligned"><img width="90%" src="images/hr.png" alt="" /></div>
-	<div class="sublinks"><strong><a href="index.html">Home</a>&nbsp;&mdash;&nbsp;<a href="server.html"><span class="white">Server</span></a>&nbsp;&mdash;&nbsp;<a href="downloads.html"><span class="white">Downloads</span></a></strong><br/>
-	<strong><a href="projects.html"><span class="white">Projects</span></a></div>
-	<div class="text">
-		<span class="orange">Server Currently Running:</span><br/><br/>
-		<img width="75%" src="images/server.png" alt="Server Running" />
-	</div>
-</div>
-<div class="righthalf">
-<div class="subheader">Welcome!</div>
-	<div class="centerAligned"><img width="90%" src="images/hr.png" alt="" /></div>
-<div class="text">
-Glad you could join us. We've got a lot of cool stuff, so check it out!
-</div>
-<div class="subheader"><span class="white">Check us out on </span><a href="http://www.youtube.com/user/ruderodder">YouTube</a></div>
-	<div class="centerAligned"><img width="90%" src="images/hr.png" alt="" /></div>
-<div class="centerAligned"><iframe width="560" height="315" src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe></div>
-
-<div class="subheader">Links</div>
-	<div class="centerAligned"><img width="90%" src="images/hr.png" alt="" /></div>
-  <div class="text">Like us on <a href="http://www.facebook.com/pages/Rude-Rodders-Productions/273316879360906">Facebook</a></div>
-   <div class="text">Send us an <a href="mailto:ruderodder@gmail.com">eMail</a></div>
-</div>
-</div>
-  </div>
-
-
-</body>
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Rude Rodder Productions</title>
+		<link rel="stylesheet" href="style/template.css" type="text/css" /> 
+		<script type="text/javascript" src="javascript/main.js"></script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-25395106-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div class="headerImage"><img class="bannerImage" src="images/RRProd_long.jpg" alt="RRProd" /></div>
+		<table class="navbar">
+			<tr>
+				<td class="third"><a id="about" class="active" onclick="loadContent(this)">About</a></td>
+				<td class="third"><a id="rodders" class="inactive" onclick="loadContent(this)">Rodders</a></td>
+				<td class="third"><a id="feed" class="inactive" onclick="loadContent(this)">Feed</a></td>
+			</tr>
+		</table>
+		<div id="aboutContent" class="popUp">
+			<hr class="divider" alt="" />
+			<div class="subheader">Welcome!</div>
+			<div class="text">Glad you could join us. We've got a lot of cool stuff, so check it out!</div>
+		</div>
+		<div id="roddersContent" class="hidden">
+			<hr class="divider" alt="" />
+			<div class="rodderImages">
+				<a href="http://joefrizzell.com"><img src="images/joe.png"/></a>
+				<a href="http://georgecolon.com"><img src="images/george.jpg"/></a></div>
+			</div>
+		<div id="feedContent" class="hidden">
+			<hr class="divider" alt="" />
+			<div class="subheader"><span class="white">Check us out on </span><a href="http://www.youtube.com/user/ruderodder">YouTube</a></div>
+			<div class="centerAligned"><iframe width="560" height="315" src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe></div>
+			<div class="text">Like us on <a href="http://www.facebook.com/RudeRodders">Facebook</a></div>
+			<div class="text">Send us an <a href="mailto:ruderodder@gmail.com">eMail</a></div>
+		</div>
+	</body>
 </html>
