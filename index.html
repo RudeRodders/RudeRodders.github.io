@@ -4,6 +4,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Rude Rodder Productions</title>
 		<link rel="stylesheet" href="style/template.css" type="text/css" /> 
+		<link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/icofavicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
+		<link rel="manifest" href="images/ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/ico/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<script type="text/javascript" src="javascript/main.js"></script>
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
@@ -25,23 +42,30 @@
 				<td class="third"><a id="feed" class="inactive" onclick="loadContent(this)">Feed</a></td>
 			</tr>
 		</table>
-		<div id="aboutContent" class="popUp">
-			<hr class="divider" alt="" />
-			<div class="subheader">Welcome!</div>
-			<div class="text">Glad you could join us. We've got a lot of cool stuff, so check it out!</div>
-		</div>
-		<div id="roddersContent" class="hidden">
-			<hr class="divider" alt="" />
-			<div class="rodderImages">
-				<a onclick="OpenInNewTab('http://joefrizzell.com')"><img src="images/joe.png"/></a>
-				<a onclick="OpenInNewTab('http://georgecolon.com')"><img src="images/george.jpg"/></a></div>
+		<div class="theContent">
+			<div id="aboutContent" class="popUp">
+				<img class="divider" src="images/hr.png" alt="" />
+				<h1 class="header">Welcome!</h1>
+				<div class="text">We've got a lot of cool stuff, so check it out!</div>
 			</div>
-		<div id="feedContent" class="hidden">
-			<hr class="divider" alt="" />
-			<div class="subheader"><span class="white">Check us out on </span><a onclick="OpenInNewTab('http://www.youtube.com/user/ruderodder')">YouTube</a></div>
-			<div class="centerAligned"><iframe width="560" height="315" src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe></div>
-			<div class="text">Like us on <a onclick="OpenInNewTab('http://www.facebook.com/RudeRodders')">Facebook</a></div>
-			<div class="text">Send us an <a onclick="OpenInNewTab('mailto:ruderodder@gmail.com')">eMail</a></div>
+			<div id="roddersContent" class="hidden">
+				<img class="divider" src="images/hr.png" alt="" />
+				<h1 class="header">We are the Rodders:</h1>
+				<div class="text">Hover over the images below to see who is who. Click on the image to visit that Rodder's site.</div>
+				<div class="rodderImages">
+					<a onclick="OpenInNewTab('http://joefrizzell.com')" title="Joe Frizzell"><img src="images/joe.png" alt="Joe Frizzell"/></a>
+					<a onclick="OpenInNewTab('http://georgecolon.com')" title="George Colón"><img src="images/george.jpg" alt="George Colón"/></a></div>
+				</div>
+			<div id="feedContent" class="hidden">
+				<img class="divider" src="images/hr.png" alt="" />
+				<div class="header">YouTube Channels</div>
+				<div class="text"><br/><br/><br/><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=ruderodder')"><img class="h2em" src="images/rrlogo.jpg" alt="Rude Rodder Logo"/>Main Channel:</a></div>
+				<div class="videoWrapper"><iframe src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe></div>
+				<div class="text"><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=joefrizzell')"><img class="h2em" src="images/joelogo.jpg" alt="Joe logo"/>Joe's Channel:</a></div>
+				<div class="videoWrapper"><iframe src="https://www.youtube.com/embed/H-0GKrFG8kw?list=UUTDKXx4nSKZ9CGyeHyb9m4w" frameborder="0" allowfullscreen></iframe></div>
+				<div class="text">Like us on <a onclick="OpenInNewTab('http://www.facebook.com/RudeRodders')">Facebook</a></div>
+				<div class="text">Send us an <a onclick="OpenInNewTab('mailto:ruderodder@gmail.com')">eMail</a></div>
+			</div>
 		</div>
 	</body>
 </html>
