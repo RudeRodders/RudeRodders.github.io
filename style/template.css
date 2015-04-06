@@ -289,6 +289,9 @@ div.videoWrapper iframe {
 		width: 75%;
 		margin-left: 12.5%;
 	}
+	.footer {
+		margin-left: 12.5%;
+	}
 }
 @media (min-width: 1024px) {
 	.theContent{
@@ -297,6 +300,9 @@ div.videoWrapper iframe {
 	}
 	table.navbar{
 		width: 50%;
+		margin-left: 25%;
+	}
+	.footer {
 		margin-left: 25%;
 	}
 }
