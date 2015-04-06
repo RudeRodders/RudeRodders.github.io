@@ -52,8 +52,6 @@ html {
 page-break-inside:avoid;
 }
 .headerImage {
-	position: fixed;
-	top: 0;
 	width: 100%;
 	text-align: center;
 	-webkit-animation-name: dropIn;
@@ -139,6 +137,12 @@ page-break-inside:avoid;
 	text-align: center;
 	margin-top:1.5em;
 }
+.subheader {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin-top:1.5em;
+}
 .text {
 	font-size: small;
 	font-style: normal;
@@ -170,12 +174,16 @@ img.divider {
 }
 table.navbar{
 	position: fixed;
-	top: 200px;
+	top: 0;
 	font-size: large;
 	font-weight: bold;
 	text-align: center;
 	color:#FF9900;
-	margin: .5em 0 1.5em 0;
+	height:50px;
+	z-index: 99;
+	opacity:.8;
+	background-color: #000;
+	padding-top: 10px;
 }
 .active {
 	font-family: Impact, Charcoal, sans-serif;
@@ -195,6 +203,7 @@ table.navbar{
 	animation-duration:4s;
 	animation-iteration-count:infinite;
 	animation-timing-function: ease-in;
+	opacity: 1;
 }
 .inactive {
 	font-size:75%;
@@ -205,7 +214,6 @@ table.navbar{
 	border-radius: 15px;
 	padding:7px;	
     box-shadow: 2px 2px 10px #888;
-	opacity: .5;
 }
 td.third{
 	width: 33.33%;
@@ -232,7 +240,7 @@ td.third{
 }
 div.videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 65%; /* 16:9 */
 	height: 0;
 }
 div.videoWrapper iframe {
@@ -248,11 +256,8 @@ div.videoWrapper iframe {
 	text-align: center;
 }
 .theContent{
-	position: fixed;
-	top: 275px;
-	width: 100%;
-	height:80%;
-	overflow: auto;
+	position: relative;
+	margin-top: 60px;
 }
 .h2em{
 height: 2em;
@@ -261,22 +266,14 @@ height: 2em;
 	table.navbar{
 		width: 100%;
 	}
-	.rodderImages{
-		width: 100%;
-	}
-	div.videoWrapper {
+	.theContent{
 		width: 100%;
 	}
 }
 @media (min-width : 768px) {
-	.rodderImages{
+	.theContent{
 		width: 75%;
 		margin-left: 12.5%;
-	}
-	div.videoWrapper {
-		width: 75%;
-		margin-left: 12.5%;
-		padding-bottom: 40%;
 	}
 	table.navbar{
 		width: 75%;
@@ -284,14 +281,9 @@ height: 2em;
 	}
 }
 @media (min-width: 1024px) {
-	.rodderImages{
+	.theContent{
 		width: 50%;
 		margin-left: 25%;
-	}
-	div.videoWrapper {
-		width: 50%;
-		margin-left: 25%;
-		padding-bottom: 30%;
 	}
 	table.navbar{
 		width: 50%;

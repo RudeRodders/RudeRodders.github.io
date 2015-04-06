@@ -1,7 +1,9 @@
 window.addEventListener('load', eventWindowLoaded, false);	
 function eventWindowLoaded() {
+	window.scrollTo(500, 0);
 }
 function loadContent(theCaller){
+	window.scrollTo(500, 0);
 	var callerID = theCaller.id;
 	var contentID = callerID+'Content';
 	var activeTabs = document.getElementsByClassName('active');
