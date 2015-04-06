@@ -19,9 +19,15 @@ a {
 	cursor: hand;
 	cursor: pointer;
 }
+strong {
+	font-family: Impact, Charcoal, sans-serif;
+	color: #FF9900;
+	text-transform: uppercase;
+}
 body {
-background-color:#000000;
-font-family: 'Nothing You Could Do', cursive;
+	background-color:#000000;
+	font-family: 'Nothing You Could Do', cursive;
+	color: #FFF;
 }
 html {
 	scrollbar-base-color: #AAAAAA;
@@ -132,7 +138,6 @@ page-break-inside:avoid;
 	font-weight: bold;
 	text-align: center;
 	margin-top:1.5em;
-	color: #FF9900;
 }
 .text {
 	font-size: small;
@@ -173,8 +178,9 @@ table.navbar{
 	margin: .5em 0 1.5em 0;
 }
 .active {
-	color: #fff;
-	font-size:120%;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #FFF;
+	font-size:150%;
 	cursor: hand;
 	cursor: pointer;
 	background-color: #999;
@@ -192,7 +198,7 @@ table.navbar{
 }
 .inactive {
 	font-size:75%;
-	color:#666;
+	color:#fff;
 	cursor: hand;
 	cursor: pointer;
 	background-color: #999;
