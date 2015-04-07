@@ -5,6 +5,7 @@ function eventWindowLoaded() {
 function loadContent(theCaller){
 	window.scrollTo(500, 0);
 	var callerID = theCaller.id;
+	var callerClass = theCaller.className;
 	var contentID = callerID+'Content';
 	var activeTabs = document.getElementsByClassName('active');
 	var popUpDivs = document.getElementsByClassName('popUp');
@@ -25,7 +26,12 @@ function loadContent(theCaller){
 	for (var i=0; i<activeTabs.length; i++) {
 		inActivate(activeTabs[i]);
 	}
-	theCaller.className = 'active'; 
+	if (callerClass !='active'){
+		theCaller.className = 'active';
+	}
+	else {
+		theCaller.className = 'inactive';
+	} 
 }
 function inActivate(theElement){
 	theElement.className = 'inactive'; 
