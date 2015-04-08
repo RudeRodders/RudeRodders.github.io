@@ -244,6 +244,7 @@ div.videoWrapper {
 	position: relative;
 	padding-bottom: 65%; /* 16:9 */
 	height: 0;
+	width: 100%;
 }
 div.videoWrapper iframe {
 	position: absolute;
@@ -257,9 +258,9 @@ div.videoWrapper iframe {
 	margin-top: 1.5em;
 	text-align: center;
 }
-.theContent{
+#theContent{
 	position: relative;
-	margin-top: 60px;
+	padding-top: 60px;
 	padding-bottom: 2em;
 }
 .footer {
@@ -278,12 +279,12 @@ div.videoWrapper iframe {
 	table.navbar{
 		width: 100%;
 	}
-	.theContent{
+	#theContent{
 		width: 100%;
 	}
 }
 @media (min-width : 768px) {
-	.theContent{
+	#theContent{
 		width: 75%;
 		margin-left: 12.5%;
 	}
@@ -296,7 +297,7 @@ div.videoWrapper iframe {
 	}
 }
 @media (min-width: 1024px) {
-	.theContent{
+	#theContent{
 		width: 50%;
 		margin-left: 25%;
 	}

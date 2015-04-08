@@ -1,9 +1,14 @@
 window.addEventListener('load', eventWindowLoaded, false);	
 function eventWindowLoaded() {
 	window.scrollTo(500, 0);
+	document.body.style.overflow = 'hidden';
+	setTimeout(function() {
+		document.body.style.overflow = 'auto';
+	}, 1200);
 }
 function loadContent(theCaller){
 	window.scrollTo(500, 0);
+	var theContent = document.getElementById('theContent');
 	var callerID = theCaller.id;
 	var callerClass = theCaller.className;
 	var contentID = callerID+'Content';
@@ -11,6 +16,11 @@ function loadContent(theCaller){
 	var popUpDivs = document.getElementsByClassName('popUp');
 	var contentDiv = document.getElementById(callerID+'Content');
 	var tabClass = contentDiv.className;
+	/*doing stuff*/
+	document.body.style.overflow = 'hidden';
+	setTimeout(function() {
+		document.body.style.overflow = 'auto';
+	}, 1200);
 	for (var i=0; i<popUpDivs.length; i++) {
 		popDown(popUpDivs[i]);
 	}
