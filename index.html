@@ -36,19 +36,20 @@
 	<body>
 		<table class="navbar">
 			<tr>
-				<td class="third"><a id="about" class="active" onclick="loadContent(this)">About</a></td>
-				<td class="third"><a id="rodders" class="inactive" onclick="loadContent(this)">Rodders</a></td>
-				<td class="third"><a id="feed" class="inactive" onclick="loadContent(this)">Feed</a></td>
+				<td class="third"><a id="about" class="active" onclick="loadContent('about')">About</a></td>
+				<td class="third"><a id="rodders" class="inactive" onclick="loadContent('rodders')">Rodders</a></td>
+				<td class="third"><a id="feed" class="inactive" onclick="loadContent('feed')">Feed</a></td>
 			</tr>
 		</table>
 		<div id="theContent">
 			<div class="headerImage"><img class="bannerImage" src="images/RRProd_long.jpg" alt="RRProd" /></div>
 			<div id="aboutContent" class="popUp">
 				<img class="divider" src="images/hr.png" alt="" />
-				<h1 class="header">What is a <strong>Rodder</strong>?</h1>
-				<p class="text">We are a community of gamers, creators, designers, developers and nerds. We love playing games, creating things and sharing stuff. We know working together we can reach more people and help share our talents with the world.</p>
+				<h1 class="subheader">What is a <strong>Rodder</strong>?</h1>
+				<p class="text">We are a community of gamers, creators, designers, developers and nerds. We love playing games, creating things and sharing stuff. By working together we can reach more people and help share our talents with the world.</p>
 				<h2 class="subheader">Want to join the <strong>Team</strong>?</h1>
-				<p class="text">Awesome! Send us a <a href="http://twitter.com/home?status=Hey @RudeRodders, I want to be a Rodder too!!! [Insert your content URL here]">tweet</a>, drop us an <a href="mailto:rude.rodder@gmail.com?subject=Hey RudeRodders, I want to be a Rodder too!!!">email</a>, or message us on <a href="http://www.facebook.com/RudeRodders">Facebook</a>. Make sure to include a link to your content (youtube, website, github, deviant art, whatever) and we'll get you started.</p>
+				<p class="text">Awesome! All you have to do is apply to our <a href="https://groups.google.com/group/ruderodders"><strong>Google group</strong></a>. Make sure to include a link to your content (youtube, portfolio, github, tumblr, instagram, deviant art, whatever) in the application request so we can add you to the list. Just FYI, we will use your google avatar as the link in the <a onclick="loadContent('rodders')"><strong>Rodders</strong></a> section unless you tell us otherwise.</p>
+				<p class="text">If you want your content to go in the <a onclick="loadContent('feed')"><strong>Feed</strong></a> section, you'll need to send us the exact link of the content you want to be fed out. This should be something that you update on regularly.
 			</div>
 			<div id="roddersContent" class="hidden">
 				<img class="divider" src="images/hr.png" alt="" />
@@ -63,10 +64,14 @@
 			<div id="feedContent" class="hidden">
 				<img class="divider" src="images/hr.png" alt="" />
 				<div class="header"><strong>YouTube</strong> Channels</div>
-				<p class="text"><br/><br/><br/><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=ruderodder')"><img class="h2em" src="images/rrlogo.jpg" alt="Rude Rodder Logo"/><strong> Main</strong> Channel:</a></p>
-				<div class="videoWrapper"><iframe src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe></div>
-				<p class="text"><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=joefrizzell')"><img class="h2em" src="images/joelogo.jpg" alt="Joe logo"/><strong> Joe's</strong> Channel:</a></p>
-				<div class="videoWrapper"><iframe src="https://www.youtube.com/embed/Dw0FKOsZpYM?list=UUTDKXx4nSKZ9CGyeHyb9m4w" frameborder="0" allowfullscreen></iframe></div>
+				<div class="videoWrapper">
+					<p class="text"><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=ruderodder')"><img class="h2em" src="images/rrlogo.jpg" alt="Rude Rodder Logo"/><strong> Main</strong> Channel:</a></p>
+					<iframe src="http://www.youtube.com/embed/videoseries?list=PLD5719FEE24313841" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videoWrapper">
+					<p class="text"><a onclick="OpenInNewTab('http://www.youtube.com/subscription_center?add_user=joefrizzell')"><img class="h2em" src="images/joelogo.jpg" alt="Joe logo"/><strong> Joe's</strong> Channel:</a></p>
+					<iframe src="https://www.youtube.com/embed/Dw0FKOsZpYM?list=UUTDKXx4nSKZ9CGyeHyb9m4w" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
 			<p class="footer">&#160;
 			 • <a onclick="OpenInNewTab('http://www.twitter.com/RudeRodders')"><strong>Twitter</strong></a>

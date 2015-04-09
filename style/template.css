@@ -185,6 +185,7 @@ table.navbar{
 	opacity:.8;
 	background-color: #000;
 	padding-top: 10px;
+	width: 100%;
 }
 .active {
 	font-family: Impact, Charcoal, sans-serif;
@@ -243,16 +244,16 @@ table.navbar{
 div.videoWrapper {
 	position: relative;
 	padding-bottom: 65%; /* 16:9 */
-	height: 0;
 	width: 100%;
 }
 div.videoWrapper iframe {
+	
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 90%;
-	height: 80%;
-	margin: 5%;
+	width: 100%;
+	height: 90%;
+	margin-top: 3em;
 }
 .rodderImages{
 	margin-top: 1.5em;
@@ -262,6 +263,7 @@ div.videoWrapper iframe {
 	position: relative;
 	padding-top: 60px;
 	padding-bottom: 2em;
+	width: 100%;
 }
 .footer {
 	position: fixed;
@@ -275,14 +277,6 @@ div.videoWrapper iframe {
 .h2em{
 	height: 2em;
 }
-@media (min-width : 0px) {
-	table.navbar{
-		width: 100%;
-	}
-	#theContent{
-		width: 100%;
-	}
-}
 @media (min-width : 768px) {
 	#theContent{
 		width: 75%;
@@ -294,6 +288,11 @@ div.videoWrapper iframe {
 	}
 	.footer {
 		margin-left: 12.5%;
+	}
+	div.videoWrapper {
+		float: left;
+		padding-bottom: 30%; /* 16:9 */
+		width: 50%;
 	}
 }
 @media (min-width: 1024px) {

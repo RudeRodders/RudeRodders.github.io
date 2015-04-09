@@ -6,10 +6,10 @@ function eventWindowLoaded() {
 		document.body.style.overflow = 'auto';
 	}, 1200);
 }
-function loadContent(theCaller){
+function loadContent(callerID){
 	window.scrollTo(500, 0);
 	var theContent = document.getElementById('theContent');
-	var callerID = theCaller.id;
+	var theCaller = document.getElementById(callerID);
 	var callerClass = theCaller.className;
 	var contentID = callerID+'Content';
 	var activeTabs = document.getElementsByClassName('active');
