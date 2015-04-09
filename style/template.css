@@ -217,8 +217,8 @@ table.navbar{
 	padding:7px;	
     box-shadow: 2px 2px 10px #888;
 }
-td.third{
-	width: 33.33%;
+.third{
+	width: 30%;
 }
 .glow {
 	-webkit-animation-name: glow;
