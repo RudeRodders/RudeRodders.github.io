@@ -18,6 +18,7 @@ a:active {
 a {
 	cursor: hand;
 	cursor: pointer;
+	color: #FF9900;
 }
 strong {
 	font-family: Impact, Charcoal, sans-serif;
@@ -83,6 +84,7 @@ page-break-inside:avoid;
 	100% {transform: translate(0px,0px);}
 }
 .popUp{
+	background-color: black;
 	-webkit-animation-name: popUp;
 	-webkit-animation-duration:1.5s;
 	-webkit-animation-iteration-count: 1;
