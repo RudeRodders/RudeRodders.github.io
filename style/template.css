@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+p, div, a, h1 {
+	margin: 0;
+	text-indent: 0;
+}
 a:link {
 	border-color: #FF9900;
 	color: #FF9900;
@@ -50,7 +54,7 @@ html {
 	filter: alpha(opacity=60);
 }
 .group {
-page-break-inside:avoid;
+	page-break-inside:avoid;
 }
 .headerImage {
 	width: 100%;
@@ -134,13 +138,7 @@ page-break-inside:avoid;
 	text-decoration:underline;
 }
 .header {
-	font-size: 3em;
-	font-weight: bold;
-	text-align: center;
-	margin-top:1.5em;
-}
-.subheader {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
 	margin-top:1.5em;
@@ -270,25 +268,20 @@ div.videoWrapper iframe {
 .footer {
 	position: fixed;
 	bottom: 0;
-	left:0;
-	margin: 0;
+	width: 100%;
 	text-align: center;
 	background-color: black;
-	opacity:.8;
 }
 .h2em{
 	height: 2em;
 }
-@media (min-width : 768px) {
+@media (min-width : 769px) {
 	#theContent{
 		width: 75%;
 		margin-left: 12.5%;
 	}
 	table.navbar{
 		width: 75%;
-		margin-left: 12.5%;
-	}
-	.footer {
 		margin-left: 12.5%;
 	}
 	div.videoWrapper {
@@ -297,16 +290,13 @@ div.videoWrapper iframe {
 		width: 50%;
 	}
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 	#theContent{
 		width: 50%;
 		margin-left: 25%;
 	}
 	table.navbar{
 		width: 50%;
-		margin-left: 25%;
-	}
-	.footer {
 		margin-left: 25%;
 	}
 }
