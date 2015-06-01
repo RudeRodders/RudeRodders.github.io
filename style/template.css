@@ -247,6 +247,11 @@ div.videoWrapper {
 	width: 100%;
 	margin-top: 3em;
 }
+div.tumblrWrapper {
+	width: 100%;
+	margin-top: 1em;
+	text-align: center;
+}
 div.videoWrapper iframe {
 	
 	position: absolute;
@@ -263,7 +268,7 @@ div.videoWrapper iframe {
 #theContent{
 	position: relative;
 	padding-top: 60px;
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 	width: 100%;
 }
 .footer {
@@ -289,6 +294,11 @@ div.videoWrapper iframe {
 		float: left;
 		padding-bottom: 30%; /* 16:9 */
 		width: 50%;
+	}
+	div.tumblrWrapper {
+		float: left;
+		width: 50%;
+		margin-bottom: 1em;
 	}
 }
 @media (min-width: 1025px) {
