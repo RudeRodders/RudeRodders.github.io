@@ -268,7 +268,7 @@ div.videoWrapper iframe {
 #theContent{
 	position: relative;
 	padding-top: 60px;
-	padding-bottom: 4em;
+	margin-bottom: 2em;
 	width: 100%;
 }
 .footer {
