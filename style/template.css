@@ -271,6 +271,9 @@ div.videoWrapper iframe {
 	margin-bottom: 2em;
 	width: 100%;
 }
+#feedContent{
+	text-align: center;
+}
 .footer {
 	position: fixed;
 	bottom: 0;
