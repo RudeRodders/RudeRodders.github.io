@@ -318,5 +318,6 @@ div.w50c {
 	margin: auto;
 }
 img.w100 {
-	width: 100%;
+	width: 100px;
+	margin: auto;
 }
