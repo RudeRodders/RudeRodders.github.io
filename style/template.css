@@ -144,12 +144,11 @@ html {
 	margin-top:1.5em;
 }
 .text {
-	font-size: small;
+	font-size: xx-large;
 	font-style: normal;
 	text-align: center;
 	margin:.25em;
 	color: #FFF;
-	font-family: sans-serif;
 	line-height: 1.5em;
 }
 .textleft {
@@ -195,7 +194,7 @@ table.navbar{
 	cursor: pointer;
 	background-color: #999;
 	border-radius: 15px;
-	padding:7px;	
+	padding:7px;
     box-shadow: 2px 2px 10px #888;
 	-webkit-animation-name: glow;
 	-webkit-animation-duration:4s;
@@ -215,7 +214,7 @@ table.navbar{
 	cursor: pointer;
 	background-color: #999;
 	border-radius: 15px;
-	padding:7px;	
+	padding:7px;
     box-shadow: 2px 2px 10px #888;
 }
 .third{
@@ -253,7 +252,7 @@ div.tumblrWrapper {
 	text-align: center;
 }
 div.videoWrapper iframe {
-	
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -313,4 +312,11 @@ div.videoWrapper iframe {
 		width: 50%;
 		margin-left: 25%;
 	}
+}
+div.w50c {
+	width: 50%;
+	margin: auto;
+}
+img.w100 {
+	width: 100%;
 }
